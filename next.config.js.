@@ -5,3 +5,11 @@ module.exports = nextConfig
 module.exports = {
   reactStrictMode: true,
 }
+module.exports = {
+  reactStrictMode: true,
+  webpack(config, options) {
+    // Example: add a custom loader or plugin
+    // config.plugins.push(new MyPlugin())
+    return config;
+  },
+}
